@@ -23,6 +23,7 @@ class NewsAgent:
         Fetch news for the symbol and perform NLP sentiment analysis.
         If fetch_more is True, we might use a deeper search or different source (simulated here).
         """
+        print(f"[DEBUG] NewsAgent - Analyzing symbol: '{symbol}' (Fetch more: {fetch_more})")
         if not validate_ticker(symbol):
             return {"status": "error", "error": f"Invalid ticker symbol: {symbol}", "confidence": 0}
             
