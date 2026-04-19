@@ -26,7 +26,8 @@ with st.sidebar:
     st.markdown("### 🤖 Copilot Settings")
     st.markdown("Configure the autonomous AI agent system.")
     
-    ticker_input = st.text_input("Stock Ticker Symbol", placeholder="e.g., AAPL").upper()
+    ticker_input = st.text_input("Stock Ticker Symbol", placeholder="e.g., TSLA").upper()
+    print(f"[DEBUG] Streamlit UI - Input Ticker: '{ticker_input}'")
     
     analysis_mode = st.selectbox(
         "Analysis Mode",
@@ -64,6 +65,7 @@ if analyze_button:
         st.warning("⚠️ Please enter a valid stock ticker symbol.")
     else:
         with st.spinner(f"🔍 Orchestrating agents to analyze {ticker_input}..."):
+            print(f"[DEBUG] Streamlit UI - Passing '{ticker_input}' to SupervisorAgent")
             result = st.session_state.supervisor.research_stock(
                 symbol=ticker_input,
                 mode=analysis_mode,
