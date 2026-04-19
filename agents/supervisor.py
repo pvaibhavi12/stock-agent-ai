@@ -36,6 +36,7 @@ class SupervisorAgent:
         
     def _execute_step(self, step: str, symbol: str, memory: Dict[str, Any], logs: List[str]) -> None:
         """Execute a single step in the plan, updating memory."""
+        print(f"[DEBUG] SupervisorAgent - Executing step: '{step}' for symbol: '{symbol}'")
         logs.append(f"Executing step: {step}")
         
         if step == "fetch_price":
@@ -100,6 +101,7 @@ class SupervisorAgent:
             return {"success": False, "error": f"Invalid ticker symbol: '{symbol}'"}
             
         symbol = symbol.upper()
+        print(f"[DEBUG] SupervisorAgent - Received symbol: '{symbol}' for mode: '{mode}'")
         logs.append(f"Goal received: Analyze {symbol} (Mode: {mode}, Risk Profile: {risk_profile})")
         
         # Initialize Runtime Memory
