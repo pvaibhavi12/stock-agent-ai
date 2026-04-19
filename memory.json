@@ -1,5 +1,50 @@
 [
     {
+        "symbol": "META",
+        "timestamp": "2026-04-19T14:12:42.672434",
+        "mode": "full",
+        "risk_profile": "medium",
+        "recommendation": "BUY",
+        "risk_score": 4,
+        "confidence": 97
+    },
+    {
+        "symbol": "NVDA",
+        "timestamp": "2026-04-19T14:11:58.814789",
+        "mode": "full",
+        "risk_profile": "medium",
+        "recommendation": "HOLD",
+        "risk_score": 5,
+        "confidence": 92
+    },
+    {
+        "symbol": "TSLA",
+        "timestamp": "2026-04-19T14:11:47.078370",
+        "mode": "full",
+        "risk_profile": "medium",
+        "recommendation": "SELL",
+        "risk_score": 7,
+        "confidence": 90
+    },
+    {
+        "symbol": "GOOGL",
+        "timestamp": "2026-04-19T14:11:35.514763",
+        "mode": "full",
+        "risk_profile": "medium",
+        "recommendation": "HOLD",
+        "risk_score": 6,
+        "confidence": 92
+    },
+    {
+        "symbol": "MSFT",
+        "timestamp": "2026-04-19T14:10:14.121366",
+        "mode": "full",
+        "risk_profile": "medium",
+        "recommendation": "BUY",
+        "risk_score": 3,
+        "confidence": 92
+    },
+    {
         "symbol": "AAPL",
         "timestamp": "2026-04-19T12:31:07.492475",
         "mode": "full",
