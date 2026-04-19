@@ -17,6 +17,7 @@ class MarketAgent:
         """
         Analyze the market data for the given symbol to identify pricing trends.
         """
+        print(f"[DEBUG] MarketAgent - Analyzing symbol: '{symbol}' (Fallback: {use_fallback})")
         if not validate_ticker(symbol):
             return {"status": "error", "error": f"Invalid ticker symbol: {symbol}", "confidence": 0}
             
