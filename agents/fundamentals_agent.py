@@ -17,6 +17,7 @@ class FundamentalsAgent:
         """
         Analyze the fundamental data for the given symbol to evaluate valuation.
         """
+        print(f"[DEBUG] FundamentalsAgent - Analyzing symbol: '{symbol}'")
         if not validate_ticker(symbol):
             return {"status": "error", "error": f"Invalid ticker symbol: {symbol}", "confidence": 0}
             
